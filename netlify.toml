@@ -1,0 +1,3 @@
+# Prebuilt site: the files in this folder are served as-is, nothing is built.
+[build]
+  publish = "."

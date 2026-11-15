@@ -33,7 +33,7 @@
     <link rel="preload" href="./intro/sound.ktx" as="fetch" crossorigin>
     <link rel="preload" href="./palette.ktx" as="fetch" crossorigin>
     
-  <script type="module" crossorigin src="./assets/index-BwXfpqpF.js"></script>
+  <script type="module" crossorigin src="./assets/index-UowdIIc3.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/dist-BiW6BJVu.js">
   <link rel="stylesheet" crossorigin href="./assets/index-BM1b7eY0.css">
 </head>
@@ -842,7 +842,16 @@
 
     </div>
 
-    <a class="skip-drive" href="resume.html">Résumé</a>
-    <style>.skip-drive{z-index:50;color:#ffb000;letter-spacing:.04em;background:#141e38d9;border:2px solid #ffb000;border-radius:999px;padding:9px 16px;font:700 15px Nunito,sans-serif;text-decoration:none;position:fixed;bottom:18px;left:18px}.skip-drive:hover{color:#142038;background:#ffb000}</style>
+    <a class="resume-quest js-resume-quest" href="#">
+        <span class="locked-label">🔒 Résumé <span class="count js-resume-quest-count">0/5</span></span>
+        <span class="unlocked-label">★ Résumé</span>
+    </a>
+    <div class="resume-quest-panel js-resume-quest-panel">
+        <button class="close js-resume-quest-close" aria-label="Close">×</button>
+        <div class="heading">Unlock my résumé</div>
+        <p>Do either one to earn it:</p>
+        <ul class="js-resume-quest-list"></ul>
+    </div>
+    <style>.resume-quest{z-index:50;color:#ffb000;letter-spacing:.04em;cursor:pointer;-webkit-user-select:none;user-select:none;background:#141e38d9;border:2px solid #ffb000;border-radius:999px;padding:9px 16px;font:15px Pally-Bold,sans-serif;text-decoration:none;position:fixed;bottom:18px;left:18px}.resume-quest .count{opacity:.8;margin-left:4px;font-weight:600}.resume-quest .unlocked-label{display:none}.resume-quest.is-unlocked{color:#142038;background:#ffb000;animation:1.6s ease-in-out infinite alternate resume-glow}.resume-quest.is-unlocked .locked-label{display:none}.resume-quest.is-unlocked .unlocked-label{display:inline}.resume-quest:hover{filter:brightness(1.1)}@keyframes resume-glow{0%{box-shadow:0 0 #ffb00000}to{box-shadow:0 0 18px #ffb000cc}}.resume-quest-panel{z-index:51;color:#eef1f7;opacity:0;pointer-events:none;background:#141e38f2;border:2px solid #ffb000;border-radius:14px;width:270px;padding:16px 18px 12px;font:14px Pally-Medium,sans-serif;transition:opacity .2s,transform .2s;position:fixed;bottom:70px;left:18px;transform:translateY(8px)}.resume-quest-panel.is-open{opacity:1;pointer-events:auto;transform:none}.resume-quest-panel .heading{color:#ffb000;margin-bottom:2px;font-size:17px;font-weight:800}.resume-quest-panel p{opacity:.8;margin:0 0 8px}.resume-quest-panel ul{margin:0;padding:0;list-style:none}.resume-quest-panel li{align-items:center;gap:8px;padding:4px 0;display:flex}.resume-quest-panel li .check{border:2px solid #ffb000;border-radius:5px;flex-shrink:0;justify-content:center;align-items:center;width:18px;height:18px;font-size:12px;display:inline-flex}.resume-quest-panel li.is-done{opacity:.6;text-decoration:line-through}.resume-quest-panel li.or{color:#ffb000;text-transform:uppercase;justify-content:center;padding:0;font-size:12px;font-weight:800}.resume-quest-panel li .progress{color:#ffb000;margin-left:auto}.resume-quest-panel li.is-done .check{color:#142038;background:#ffb000}.resume-quest-panel .close{color:#eef1f7;cursor:pointer;background:0 0;border:0;font-size:22px;position:absolute;top:6px;right:10px}</style>
 </body>
 </html>
